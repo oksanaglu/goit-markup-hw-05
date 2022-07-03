@@ -524,18 +524,23 @@ img {
 
 
 
-/* Соцсети Команды*/
 
+/* Соцсети иконки общие для команды и футера */
 .social-icon{
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    
 }
 
 .list-social-icon:not(:last-child) {
     margin-right: 10px;
 }
+
+.team-social-icon {
+    fill: currentColor;
+}
+
+/* Соцсети Команды*/
 
 .social-media-link {
     display: flex;
@@ -546,12 +551,10 @@ img {
     color: var(--svg-icon-color-gray);
     border-radius: 50%;
 
-    transition: color var(--animation-transition), backgraund-color var(--animation-transition);
+    transition: color var(--animation-transition), background-color var(--animation-transition);
 }
 
-.team-social-icon {
-    fill: currentColor;
-}
+
 .social-media-link:hover,
 .social-media-link:focus {
     color: var(--primary-white-color);
@@ -705,11 +708,6 @@ img {
     display: flex;
 }
 
-.list-social-icon {
-    fill: currentColor;
-
-}
-
 .footer-social .caption {
     display: flex;
     font-weight: 700;
@@ -719,66 +717,45 @@ img {
     text-transform: uppercase;
 
     margin-bottom: 20px;
-    
+
     color: var(--primary-white-color);
 
 }
 
+
+/* Соцсети футера */
+
+
 .footer .social-icon {
+    padding-left: 0;
     margin-left: 0;
     margin-right: 0;
     cursor: pointer;
-    
-}
 
+}
 
 .footer-social .list-social-icon {
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--primary-white-color);
-}
-
-
-
-.list-social-icon {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-
+    
     width: 44px;
     height: 44px;
-
-    transition: background-color var(--animation-transition), box-shadow var(--animation-transition);
-}
-
-.list-social-icon .link {
-    color: var(--svg-icon-color-gray);
-
-    transition: color var(--animation-transition);
- 
-}
-
-.list-social-icon .link:hover,
-.list-social-icon .link:focus {
+     
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
     color: var(--primary-white-color);
 
+    transition: background-color var(--animation-transition);
+
 }
 
-
-
-.list-social-icon:hover,
-.list-social-icon:focus {
+.footer-social .list-social-icon:hover,
+.footer-social .list-social-icon:focus {
     background-color: var(--accent-color);
-    border-radius: 50%;
 }
 
-
-
-
-
-
-/* Стили для Портфолио */
 
 
 
