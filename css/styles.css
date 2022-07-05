@@ -12,7 +12,7 @@
     --primary-white-color: #FFFFFF;
     --secondary-bg-gray-color: #2F303A;
     --secondary-dg-but-color: #F5F4FA;
-    --animation-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-transition: 1250ms cubic-bezier(0.4, 0, 0.2, 1);
     --svg-icon-color-gray: #AFB1B8;
 }
 
@@ -526,6 +526,8 @@ img {
 
 
 /* Соцсети иконки общие для команды и футера */
+
+
 .social-icon{
     display: flex;
     justify-content: center;
@@ -539,6 +541,7 @@ img {
 .team-social-icon {
     fill: currentColor;
 }
+
 
 /* Соцсети Команды*/
 
@@ -706,34 +709,40 @@ img {
 
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-social .caption {
     display: flex;
+    margin: 0;
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    margin-bottom: 20px;
+   
 
     color: var(--primary-white-color);
 
 }
 
 
+
 /* Соцсети футера */
 
-
+/*  
 .footer .social-icon {
     padding-left: 0;
     margin-left: 0;
     margin-right: 0;
     cursor: pointer;
+    
 
 }
 
+ 
 .footer-social .list-social-icon {
     display: flex;
     text-align: center;
@@ -755,6 +764,53 @@ img {
 .footer-social .list-social-icon:focus {
     background-color: var(--accent-color);
 }
+ 
+*/
+
+
+.footer .social-icon {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+  
+}
+
+
+.footer-social .list-social-icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-social .link {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+        
+    
+    width: 44px;
+    height: 44px;
+    
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-white-color);
+    
+    transition: background-color var(--animation-transition);
+
+}
+
+.footer-social .link:hover,
+.footer-social .link:focus {
+    background-color: var(--accent-color);
+}
+
+
+ 
+
+
 
 
 
@@ -1040,4 +1096,11 @@ img {
     background: transparent;
     cursor: pointer;
 
+}
+
+/* Форма */
+
+.form-application {
+    width: 448px;
+    height: 342px;
 }
