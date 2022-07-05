@@ -479,28 +479,32 @@
 					<p class="caption">присоединяйтесь</p>
 					<ul class="social-icon">
 						<li class="list-social-icon">
-							<a class="link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram"></a>
+							<a class="link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
 							<svg class="team-social-icon" width="20" height="20">
 								<use href="./imges/symbol-defs5.svg#instagram"></use>
 							</svg>
+							</a>
 						</li>
 						<li class="list-social-icon">
-							<a class="link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter"></a>
+							<a class="link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
 							<svg class="team-social-icon" width="20" height="20">
 								<use href="./imges/symbol-defs5.svg#twitter"></use>
 							</svg>
+							</a>
 						</li>
 						<li class="list-social-icon">
-							<a class="link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook"></a>
+							<a class="link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
 							<svg class="team-social-icon" width="20" height="20">
 								<use href="./imges/symbol-defs5.svg#facebook"></use>
 							</svg>
+							</a>
 						</li>
 						<li class="list-social-icon">
-							<a class="link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin"></a>
+							<a class="link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
 							<svg class="team-social-icon" width="20" height="20">
 								<use href="./imges/symbol-defs5.svg#linkedin"></use>
 							</svg>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -516,29 +520,41 @@
 						<use href="./imges/symbol-defs5.svg#icon-Vector"></use>
 					</svg>
 				</button>
-				<form action="form-application">
+
+				<form action="form">
 					<h2>Оставьте свои данные, мы вам перезвоним</h2>
-					<div class="input">
+
+					
+
+					<div class="form-field">
 					<label for="name">Имя</label>
-					<input type="text" name="name" id="name">
-					<svg>
-						<use></use>
-					</svg>
-					<div class="input">
-					<label for="">Телефон</label>
-					<input type="text">
-					<svg>
-						<use></use>
-					</svg>
+					<input type="text" name="name" id="name" autofocus>
+					
 					</div>
-					<div class="input">
-					<label for="">Почта</label>
-					<input type="text">
-					<svg>
-						<use></use>
-					</svg>
+
+					<div class="iform-field">
+					<label for="tel">Телефон</label>
+					<input type="text" name="tel" id="tel">
+					
 					</div>
-					<textarea name="" id="" cols="30" rows="10">Комментарий</textarea>
+
+					<div class="form-field">
+					<label for="email">Почта</label>
+					<input type="email" name="email" id="email">
+					
+					</div>
+
+					<div>
+					<label for="comment">Комментарий</label>
+					<textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+					</div>
+
+					<input type="checkbox" name="agry" id="agry">
+					<label for="agry">Соглашаюсь с рассылкой и принимаю<span>Условия договора</span></label>
+
+					<button type="submit" disabled>Отправить</button>
+					
+					
 					
 				</form>
 			</div>
