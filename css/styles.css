@@ -718,7 +718,7 @@ img {
     
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.15;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -732,40 +732,6 @@ img {
 
 /* Соцсети футера */
 
-/*  
-.footer .social-icon {
-    padding-left: 0;
-    margin-left: 0;
-    margin-right: 0;
-    cursor: pointer;
-    
-
-}
-
- 
-.footer-social .list-social-icon {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    
-    width: 44px;
-    height: 44px;
-     
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--primary-white-color);
-
-    transition: background-color var(--animation-transition);
-
-}
-
-.footer-social .list-social-icon:hover,
-.footer-social .list-social-icon:focus {
-    background-color: var(--accent-color);
-}
- 
-*/
 
 
 .footer .social-icon {
