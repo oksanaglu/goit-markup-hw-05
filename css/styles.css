@@ -774,15 +774,23 @@ img {
 }
 
 
+/*Футер Форма Подписаться на рассылку */
+
 
 .footer-sign {
     margin-left: auto;
-    
+
+}
+
+.form-sign {
+    display: flex;
+   
     width: 570px;
     height: 86px;
 }
 
 .footer-sign-text {
+    display: flex;
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
@@ -796,14 +804,14 @@ img {
 }
 
 .form-sign input {
+   
     padding: 0;
     margin: 0;
+    margin-right: 12px;
     
     width: 358px;
     height: 50px;
    
-       
-    
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -820,10 +828,16 @@ img {
     line-height: 1.25;
     letter-spacing: 0.03em;
     
-        color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 
+
 .footer-button-sign {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
     margin: 0;
     padding: 0;
     width: 200px;
@@ -837,6 +851,11 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
+
+.footer-icon-send {
+    margin-left: 10px;
+}
+
 
 
 
@@ -1085,6 +1104,7 @@ img {
 
 }
 .modal {
+    
     position: absolute;
     margin: 0;
     padding: 0;
@@ -1136,13 +1156,9 @@ img {
 
 /* Форма */
 
-.form {
-    margin: 0;
-    padding: 0;
-}
 
 .form-text {
-    margin: 40px 40px 12px 40px ;
+    margin: 40px 40px 12px 40px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
