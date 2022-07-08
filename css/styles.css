@@ -1156,9 +1156,18 @@ img {
 
 /* Форма */
 
+.form {
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .form-text {
-    margin: 40px 40px 12px 40px;
+    margin: 0;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -1168,21 +1177,15 @@ img {
     color: #212121;
 }
 
-
-
-
 .form-field {
-   
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding: 0;
     margin-bottom: 10px;
-    
 }
-
 .form-field label {
-    margin-bottom: 4px;
+   margin-bottom: 4px;
+   
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -1191,24 +1194,27 @@ img {
 }
 
 .form-field input {
-   
+    padding-left: 42px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    outline: transparent
+    outline: transparent;
+    cursor: pointer;
+    transition: var(--animation-transition);
+   
 }
 
-
+.form-field input:focus {
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
 
 .form-field input:focus + .form-icon {
    
     fill: #2196F3;
     
-    
-}
-
-.form-input-icon input:focus {
-    color: #2196F3;
+  
 }
 
 
@@ -1218,20 +1224,12 @@ img {
     
 }
 
-.form-input {
-    width: 100%;
-    padding-left: 42px;
-   
-}
-
-
-
-
 .form-icon {
     position: absolute;
     
-    top: 11px;
+   
     left: 12px;
+    bottom: 10px;
     fill: currentColor;
 }
 
@@ -1241,7 +1239,8 @@ img {
 .form-comment {
     display: flex;
     flex-direction: column;
-    margin: 0 40px 20px 40px;
+    margin-bottom: 20px;
+   
     width: 448px;
     height: 138px;
 }
@@ -1261,11 +1260,13 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline:transparent;
+    transition: var(--animation-transition);
 
 }
 
 .form-comment textarea:focus {
-    color: #2196F3;
+    color:  #2196F3;
+    border: 1px solid #2196F3;
     
 }
 
@@ -1282,16 +1283,22 @@ img {
 
 
 .checkbox {
-    display: flex;
+    display: block;
+    text-align: center;
     justify-content: center;
+    align-items: center;
+  
+    height: 24px;
+    
+ 
     margin-bottom: 30px;
     
 }
 
 .chec-agry {
-    margin-left: 8.38px;
-
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.72;
@@ -1305,26 +1312,32 @@ img {
 
 .chec-icon {
     display: inline-block;
+   
     width: 16px;
     height: 15px;
+    margin-right: 7px;
+
     border: 2px solid #212121;
     border-radius: 2px;
+   
 }
 
+
 .checkbox:checked + .chec-icon {
+
     background-color: #2196F3;
-    border: #2196F3;
+    border-color: #2196F3;
+    background-image: url(../imges/vector.svg);
+    border-color: transparent;
+    background-size: contain;
+    background-origin: padding-box;
 
 }
 
 
 .button-agry {
-    margin-left: 164px;
-    margin-right: 164px;
-    margin-bottom: 40px;
-    padding: 0;
-   
-        
+    margin-left: 124px;
+  
     width: 200px;
     height: 50px;
 
