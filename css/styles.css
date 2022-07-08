@@ -805,23 +805,26 @@ img {
 
 .form-sign input {
    
-    padding: 0;
-    margin: 0;
-    margin-right: 12px;
     
+    margin-right: 12px;
+   
+    padding-left: 30px;    
     width: 358px;
     height: 50px;
+
+    color: rgba(255, 255, 255, 0.3);
    
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: #2F303A;
+    outline: transparent;
 }
 
 .footer-sign input::placeholder {
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 16px;
+    
 
     font-weight: 400;
     font-size: 16px;
@@ -850,6 +853,7 @@ img {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+   
 }
 
 .footer-icon-send {
@@ -1174,7 +1178,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
 .form-field {
@@ -1190,7 +1194,7 @@ img {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: var(--title-text-color);
 }
 
 .form-field input {
@@ -1203,16 +1207,17 @@ img {
     cursor: pointer;
     transition: var(--animation-transition);
    
+   
 }
 
 .form-field input:focus {
-    border: 1px solid #2196F3;
-    color: #2196F3;
+    border: 1px solid var(--accent-color);
+    
 }
 
 .form-field input:focus + .form-icon {
    
-    fill: #2196F3;
+    fill: var(--accent-color);
     
   
 }
@@ -1227,7 +1232,6 @@ img {
 .form-icon {
     position: absolute;
     
-   
     left: 12px;
     bottom: 10px;
     fill: currentColor;
@@ -1251,7 +1255,7 @@ img {
     margin-bottom: 4px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: var(--title-text-color);
 }
 
 .form-comment textarea {
@@ -1259,14 +1263,14 @@ img {
     margin: 0;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    outline:transparent;
+    outline: transparent;
     transition: var(--animation-transition);
 
 }
 
 .form-comment textarea:focus {
-    color:  #2196F3;
-    border: 1px solid #2196F3;
+  
+    border: 1px solid var(--accent-color);
     
 }
 
@@ -1281,19 +1285,19 @@ img {
 }
 
 
-
 .checkbox {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  
-    height: 24px;
-    
- 
-    margin-bottom: 30px;
-    
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
+
 
 .chec-agry {
     display: flex;
@@ -1303,12 +1307,19 @@ img {
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--title-text-color);
+    
+    height: 24px;
+    margin-bottom: 30px;
 }
 
 .chec-agry-link {
-    color: #2196F3;
+    color: var(--accent-color);
+    padding-left: 2px;
+    text-decoration: underline;
 }
+
+
 
 .chec-icon {
     display: inline-block;
@@ -1316,23 +1327,23 @@ img {
     width: 16px;
     height: 15px;
     margin-right: 7px;
+    
 
-    border: 2px solid #212121;
+    border: 2px solid var(--primary-text-color);
     border-radius: 2px;
+    
    
 }
 
-
 .checkbox:checked + .chec-icon {
-
-    background-color: #2196F3;
-    border-color: #2196F3;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
     background-image: url(../imges/vector.svg);
-    border-color: transparent;
-    background-size: contain;
-    background-origin: padding-box;
-
+    background-repeat: no-repeat;
 }
+
+
+
 
 
 .button-agry {
@@ -1347,9 +1358,10 @@ img {
     letter-spacing: 0.06em;
 
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--primary-white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 
     transition: background-color var(--animation-transition);
 
